@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:replace="~{fragments/_head :: head(pageTitle='Removing Strings')}"></head>
+<body>
+    <header th:replace="~{fragments/_nav}"></header>
+    <main>
+        <div class="hstack justify-content-center w-50 mx-auto py-5">
+            <div class="card w-100 app-bg-primary" id="card-main">
+                <img class="card-img-top mx-auto object-fit-scale" style="max-width: 24rem; aspect-ratio: 1;">
+                <hr class="m-3 border border-light">
+                <div class="card-body pt-0 text-light">
+                    <h5 class="card-title">Removing Strings</h5>
+                    <p class="card-text">Steps</p>
+                    <div class="accordion pb-3" id="accordion-steps">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-one" aria-expanded="true" aria-controls="collapse-one">
+                                    Unwind Strings
+                                </button>
+                            </h2>
+                            <div id="collapse-one" class="accordion-collapse collapse show" data-bs-parent="#accordion-steps">
+                                <div class="accordion-body">
+                                    <strong>
+                                        Use the tuning winders at the end of the neck to release tension on each of the six
+                                        guitar strings until they are all loose enough to pull out of the winders.
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-two" aria-expanded="false" aria-controls="collapse-two">
+                                    Remove Strings From Tuners
+                                </button>
+                            </h2>
+                            <div id="collapse-two" class="accordion-collapse collapse" data-bs-parent="#accordion-steps">
+                                <div class="accordion-body">
+                                    <strong>
+                                        Pull out each string from the hole in their tuning winder.
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-three" aria-expanded="false" aria-controls="collapse-three">
+                                    Pull Out Bridge Pins and String Ends
+                                </button>
+                            </h2>
+                            <div id="collapse-three" class="accordion-collapse collapse" data-bs-parent="#accordion-steps">
+                                <div class="accordion-body">
+                                    <strong>
+                                        Pull out each of the six bridge pins as well as the string end that was in each of the holes. It can be quite
+                                        difficult to pull bridge pins out with your hands, so if you can, use you should specialized tools or even pliers.
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn btn-light">Image Source</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer th:replace="~{fragments/_footer}"></footer>
+    <script th:inline="javascript">
+        const urls = [
+            'https://stuff.fendergarage.com/images/Q/Z/B/fcwm-online-tuner-4up-acoustic-mobile.jpg',
+            'https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/227hZqK6t3ytBfgBt8DUxD/701b5ac00ffcbead3307c052e41523e1/Step_6_Pull_String_Through_the_Right_Tuning_Peg.png',
+            'https://boldmusiclessons.com/wp-content/uploads/2021/03/guitar-restring-one.jpg'
+        ];
+
+        const images = [
+            /*[[@{/images/tuning_pegs.webp}]]*/,
+            /*[[@{/images/pulling_string_out.avif}]]*/,
+            /*[[@{/images/pulling_pin_out.jpg}]]*/
+        ];
+
+        const altImageDescriptions = [
+          'Picture of tuning pegs',
+          'Picture of string being pulled out of tuning peg',
+          'Picture of bridge pin being pulled out'
+        ];
+    </script>
+    <div th:replace="~{fragments/_scripts}"></div>
+</body>
+</html>

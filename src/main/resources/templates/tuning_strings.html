@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:replace="~{fragments/_head :: head(pageTitle='Tuning Strings')}"></head>
+<body>
+<header th:replace="~{fragments/_nav}"></header>
+<main>
+    <div class="hstack justify-content-center w-50 mx-auto py-5">
+        <div class="card w-100 app-bg-primary" id="card-main">
+            <img class="card-img-top mx-auto object-fit-scale" style="max-width: 24rem; aspect-ratio: 1;">
+            <hr class="m-3 border border-light">
+            <div class="card-body pt-0 text-light">
+                <h5 class="card-title">Removing Strings</h5>
+                <p class="card-text">Steps</p>
+                <div class="accordion pb-3" id="accordion-steps">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-one" aria-expanded="true" aria-controls="collapse-one">
+                                Decide On A Tuning
+                            </button>
+                        </h2>
+                        <div id="collapse-one" class="accordion-collapse collapse show" data-bs-parent="#accordion-steps">
+                            <div class="accordion-body">
+                                <strong>
+                                    Decide which tuning you want. The most obvious choice is E Standard tuning: EADGBE. Howver,
+                                    these are other interesting tunings to try like Open D, Eb Standard, Ethereal Tuning, etc.
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-two" aria-expanded="false" aria-controls="collapse-two">
+                                Find An Adequate Tuning Tool
+                            </button>
+                        </h2>
+                        <div id="collapse-two" class="accordion-collapse collapse" data-bs-parent="#accordion-steps">
+                            <div class="accordion-body">
+                                <strong>
+                                    Find any tuning tool you can use whether that be an actual tuner, or a tuning app/website.
+                                    If you have at least one string in tune, you can use it to tune the guitar to itself via a process called relative tuning.
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-three" aria-expanded="false" aria-controls="collapse-three">
+                                Tune The Guitar
+                            </button>
+                        </h2>
+                        <div id="collapse-three" class="accordion-collapse collapse" data-bs-parent="#accordion-steps">
+                            <div class="accordion-body">
+                                <strong>
+                                    Use whatever tuning tool you have to tune each string to the desired pitch using the winders.
+                                    If you would like to try relative tuning, get one string up to a pitch you think is correct
+                                    then start tuning by playing the fret that pertains to the next string. For instance in Standard Tuning,
+                                    you could tune the A string by playing the fifth fret of the E string and trying to match the pitches to each other.
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="btn btn-light">Image Source</a>
+            </div>
+        </div>
+    </div>
+</main>
+<footer th:replace="~{fragments/_footer}"></footer>
+<script th:inline="javascript">
+    const urls = [
+        'https://cdn.fuelrocks.com/1663545997422.jpg',
+        'https://play.google.com/store/apps/details?id=com.mwm.guitartuner&hl=en_US',
+        'https://fretboardblackbelt.files.wordpress.com/2018/07/relative-tuning.jpg'
+    ];
+
+    const images = [
+        /*[[@{/images/standard_tuning.jpg}]]*/,
+        /*[[@{/images/tuning_app.webp}]]*/,
+        /*[[@{/images/relative_tuning.jpg}]]*/
+    ];
+
+    const altImageDescriptions = [
+        'Picture of standard tuning on a guitar',
+        'Picture of a tuning app on a phone',
+        'Picture of relative tuning in standard tuning'
+    ];
+</script>
+<div th:replace="~{fragments/_scripts}"></div>
+</body>
+</html>

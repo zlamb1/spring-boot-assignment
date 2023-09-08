@@ -1,0 +1,45 @@
+:root {
+    --app-primary: #800080FF;
+}
+
+.app-bg-primary {
+    background: var(--app-primary);
+}
+
+.app-text-primary {
+    color: var(--app-primary);
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 32px;
+}
+
+/* _nav */
+
+.nav-link:hover {
+    filter: brightness(90%);
+    text-decoration: underline;
+}
+
+/* index */
+
+.card {
+    width: 24rem;
+    user-select: none;
+}
+
+.card .card-img-top {
+    background: white;
+}
+
+.card .card-body {
+    box-shadow: 2px 2px 5px black;
+}
+
+/* _footer */
+
+footer {
+    background-color: var(--app-primary);
+}

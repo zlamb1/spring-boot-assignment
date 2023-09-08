@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:replace="~{fragments/_head :: head(pageTitle='Home')}"></head>
+<body>
+    <header th:replace="~{fragments/_nav}"></header>
+    <main>
+        <div class="w-75 row justify-content-center mx-auto py-5">
+            <div class="col-4">
+                <div class="card h-100">
+                    <img th:src="@{/images/martind18.webp}" class="card-img-top" alt="...">
+                    <div class="card-body app-bg-primary text-light">
+                        <h5 class="card-title">Martin D18</h5>
+                        <p class="card-text">
+                            The classic Martin D-18 acoustic guitar will take you back to the days when acoustic guitars were king,
+                            and players depended upon rich tone and acoustic projection alone to convey their songs. Pick up Martin's absolutely
+                            amazing D-18, and you'll be captivated by its rich tonality, beautiful sonic detail, and vintage-tinged looks.
+                        </p>
+                        <a href="https://www.sweetwater.com/store/detail/MD18--martin-d-18-natural" class="btn btn-light">Shop at Sweetwater</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card h-100">
+                    <img th:src="@{/images/martind28.webp}" class="card-img-top" alt="...">
+                    <div class="card-body app-bg-primary text-light">
+                        <h5 class="card-title">Martin D28</h5>
+                        <p class="card-text">
+                            Many discerning guitarists instantly name the D-28 as their all-time favorite Martin; it is the standard to which all
+                            acoustic guitars are compared. Affectionately dubbed the "tone cannon," the D-28 deploys classic rich tone and powerful
+                            projection that's perfect for stage and studio.
+                        </p>
+                        <a href="https://www.sweetwater.com/store/detail/MD28--martin-d-28-natural" class="btn btn-light">Shop at Sweetwater</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card h-100">
+                    <img th:src="@{/images/martind45.webp}" class="card-img-top" alt="...">
+                    <div class="card-body app-bg-primary text-light">
+                        <h5 class="card-title">Martin D45</h5>
+                        <p class="card-text">
+                            The most sought-after and decorated of the Martin dreadnoughts, the flagship D-45, looks, sounds,
+                            and plays better than ever for 2018. Martin's choice of antique appointments — butterbean gold tuning knobs,
+                            hand-set abalone inlays, and an aged toner finish — give this guitar lustworthy prewar visuals.
+                        </p>
+                        <a href="https://www.sweetwater.com/store/detail/MD28--martin-d-28-natural" class="btn btn-light">Shop at Sweetwater</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer th:replace="~{fragments/_footer}"></footer>
+    <div th:replace="~{fragments/_scripts}"></div>
+</body>
+</html>
